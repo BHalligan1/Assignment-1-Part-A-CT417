@@ -61,9 +61,9 @@ public class CourseProgrammeTests {
     @Test
     public void getSetAcademicEndDate_PassedAValidDateTime_ReturnsAcademicEndDate() {
         DateTime testStartDate = DateTime.parse("01-05-23");
-        courseProgramme.setAcademicStartDate(testStartDate);
+        courseProgramme.setAcademicEndDate(testStartDate);
 
-        DateTime result = courseProgramme.getAcademicStartDate();
+        DateTime result = courseProgramme.getAcademicEndDate();
         assertEquals(testStartDate, result);
     }
 }
