@@ -13,12 +13,6 @@ public class CourseProgrammeTests {
 
     @BeforeEach
     public void SetUp() {
-        Student testStudent = new Student("Brendan Halligan", 20, 1);
-        ArrayList<Student> testStudentList = new ArrayList<>(Arrays.asList(testStudent));
-
-        DateTime testStartDate = new DateTime("09-01-22");
-        DateTime testEndDate = new DateTime("05-01-23");
-
         courseProgramme = new CourseProgramme(null, null, null, null, null);
     }
 
