@@ -1,12 +1,9 @@
-import org.aspectj.lang.annotation.Before;
 import org.joda.time.DateTime;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicReferenceArray;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,7 +12,7 @@ public class StudentTests {
     private Student student;
 
     @BeforeEach
-    public void InstantiateStudent() {
+    public void SetUp() {
         student = new Student("Brendan Halligan", 20, 1);
     }
 
@@ -67,7 +64,7 @@ public class StudentTests {
     }
 
     @Test
-    public void getSetModulesRegisteredFor_PassedAValidModule_ReturnsModulesRegisteredFor() {
+    public void getSetModulesRegisteredFor_PassedAValidArrayListOfModules_ReturnsModulesRegisteredFor() {
         Module testModuleOne = null;
         Module testModuleTwo = null;
         Module testModuleThree = null;
